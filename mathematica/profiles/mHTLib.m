@@ -3,7 +3,7 @@
 (* ::Input::Initialization:: *)
 BeginPackage["mHTLib`"]
 mHT::usage="Modified Hartman-Tran profile.
-mHT[\[Nu]0_,\[CapitalGamma]D_,\[CapitalGamma]0_,\[CapitalGamma]2_,\[CapitalDelta]0_,\[CapitalDelta]2_,Re\[Nu]opt_,Im\[Nu]opt_,\[Nu]_,Sw_:1.0,Ylm_:0.0,Xlm_:0.0,\[Alpha]_:10.0];
+mHT[\[Nu]0_,\[CapitalGamma]D_,\[CapitalGamma]0_,\[CapitalGamma]2_,\[CapitalDelta]0_,\[CapitalDelta]2_,Re\[Nu]opt_,Im\[Nu]opt_,\[Nu]_,Sw_:1.0,Ylm_:0.0,Xlm_:0.0,\[Alpha]_:10.0]";
 
 Begin["`Private`"]
 e  = 2.718281828459045;
