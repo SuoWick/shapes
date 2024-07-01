@@ -87,10 +87,9 @@ mHT[\[Nu]0_,\[CapitalGamma]D_,\[CapitalGamma]0_,\[CapitalGamma]2_,\[CapitalDelta
              (1/X-1.5/X^2)/c2]],
          z = ((\[Nu]0-\[Nu])I+c0)/\[Nu]D;
          w = cpf[-Im[z],Re[z]];
-         w rp/\[Nu]D];
-       A=Abs[Re[A]]+Im[A] I; 
+         w rp/\[Nu]D]; 
        Output = Sw LM A/(pi(1-(\[Nu]R+I Im\[Nu]opt) A));
-       {Re[Output],Im[Output]}]
+       {Abs[Re[Output]],Im[Output]}]
 End[]
 EndPackage[]
 
