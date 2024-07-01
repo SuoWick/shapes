@@ -2,9 +2,26 @@
 
 (* ::Input::Initialization:: *)
 BeginPackage["mHTLib`"]
-mHT::usage="Modified Hartman-Tran profile
-mHT[Subscript[\[Nu], 0],Subscript[\[CapitalGamma], D],Subscript[\[CapitalGamma], 0],Subscript[\[CapitalGamma], 2],Subscript[\[CapitalDelta], 0],Subscript[\[CapitalDelta], 2],Re[Subscript[\[Nu], opt]],Im[Subscript[\[Nu], opt]],\[Nu],Sw,Subscript[Y, LM],Subscript[X, LM],\[Alpha]]";
+mHT::usage="Modified Hartman Tran profile
+Subroutine to compute the complex normalized spectral shape of an isolated line by the mHT model
+mHT[\[Nu]_0, \[CapitalGamma]_D, \[CapitalGamma]_0, \[CapitalGamma]_2, \[CapitalDelta]_0, \[CapitalDelta]_2, Re[\[Nu]_opt], Im[\[Nu]_opt], \[Nu], Sw, Y_LM, X_LM, \[Alpha]]
 
+Input/Output Parameters of Routine (Arguments or Common)
+    #      ---------------------------------
+    #      \[Nu]_0   : Unperturbed line position in cm-1 (Input).
+    #      GamD      : Doppler HWHM in cm-1 (Input)
+    #      Gam0      : Speed-averaged line-width in cm-1 (Input).       
+    #      Gam2      : Speed dependence of the line-width in cm-1 (Input).
+    #      Shift0    : Speed-averaged line-shift in cm-1 (Input).
+    #      Shift2    : Speed dependence of the line-shift in cm-1 (Input)   
+    #      NuOptRe   : Real part of the Dicke parameter in cm-1 (Input).
+    #      NuOptIm   : Imaginary part of the Dicke parameter in cm-1 (Input).    
+    #      nu        : Current WaveNumber of the Computation in cm-1 (Input).
+    #	    Sw		 : Statistical weight 
+    #      Ylm       : Imaginary part of the 1st order (Rosenkranz) line mixing coefficients in cm-1 (Input)
+    #      Xlm       : Real part of the 1st order (Rosenkranz) line mixing coefficients in cm-1 (Input)
+    #      alpha     : Mass ratio in the molecule for calculating beta-correction. Applicable up to alpha=5."; 
+    
 Begin["`Private`"]
 e  = 2.718281828459045;
 pi = 3.141592653589793;
