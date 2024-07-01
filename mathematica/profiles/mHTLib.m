@@ -7,19 +7,19 @@ Subroutine to compute the complex normalized spectral shape of an isolated line 
 mHT[\[Nu]_0, \[CapitalGamma]_D, \[CapitalGamma]_0, \[CapitalGamma]_2, \[CapitalDelta]_0, \[CapitalDelta]_2, Re[\[Nu]_opt], Im[\[Nu]_opt], \[Nu], Sw, Y_LM, X_LM, \[Alpha]]
 
 Input/Output Parameters of Routine (Arguments or Common):
- * \[Nu]_0 - Unperturbed line position in cm-1 (Input).
- * \[CapitalGamma]_D - Doppler HWHM in cm-1 (Input)
- * \[CapitalGamma]_0 - Speed-averaged line-width in cm-1 (Input).       
- * \[CapitalGamma]_2 - Speed dependence of the line-width in cm-1 (Input).
- * \[CapitalDelta]_0 - Speed-averaged line-shift in cm-1 (Input).
- * \[CapitalDelta]_2 - Speed dependence of the line-shift in cm-1 (Input)   
- * Re[\[Nu]_opt] - Real part of the Dicke parameter in cm-1 (Input).
- * Im[\[Nu]_opt] - Imaginary part of the Dicke parameter in cm-1 (Input).    
- * \[Nu] - Current WaveNumber of the Computation in cm-1 (Input).
+ * \[Nu]_0 - Unperturbed line position in cm-1.
+ * \[CapitalGamma]_D - Doppler HWHM in cm-1.
+ * \[CapitalGamma]_0 - Speed-averaged line-width in cm-1.       
+ * \[CapitalGamma]_2 - Speed dependence of the line-width in cm-1.
+ * \[CapitalDelta]_0 - Speed-averaged line-shift in cm-1.
+ * \[CapitalDelta]_2 - Speed dependence of the line-shift in cm-1.   
+ * Re[\[Nu]_opt] - Real part of the Dicke parameter in cm-1.
+ * Im[\[Nu]_opt] - Imaginary part of the Dicke parameter in cm-1.    
+ * \[Nu] - Current WaveNumber of the Computation in cm-1.
  * Sw - Statistical weight 
- * Y_LM - Imaginary part of the 1st order (Rosenkranz) line mixing coefficients in cm-1 (Input)
- * X_LM - Real part of the 1st order (Rosenkranz) line mixing coefficients in cm-1 (Input)
- * \[Alpha] - Mass ratio in the molecule for calculating beta-correction. Applicable up to alpha=5."; 
+ * Y_LM - Imaginary part of the 1st order (Rosenkranz) line mixing coefficients in cm-1.
+ * X_LM - Real part of the 1st order (Rosenkranz) line mixing coefficients in cm-1.
+ * \[Alpha] - Mass ratio in the molecule for calculating \[Beta]-correction, applicable up to alpha=5."; 
     
 Begin["`Private`"]
 e  = 2.718281828459045;
