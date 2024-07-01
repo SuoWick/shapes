@@ -2,8 +2,8 @@
 
 (* ::Input::Initialization:: *)
 BeginPackage["mHTLib`"]
-mHT::usage="Modified Hartman-Tran profile.
-mHT[\[Nu]0_,\[CapitalGamma]D_,\[CapitalGamma]0_,\[CapitalGamma]2_,\[CapitalDelta]0_,\[CapitalDelta]2_,Re\[Nu]opt_,Im\[Nu]opt_,\[Nu]_,Sw_:1.0,Ylm_:0.0,Xlm_:0.0,\[Alpha]_:10.0]";
+mHT::usage="Modified Hartman-Tran profile
+mHT[Subscript[\[Nu], 0],Subscript[\[CapitalGamma], D],Subscript[\[CapitalGamma], 0],Subscript[\[CapitalGamma], 2],Subscript[\[CapitalDelta], 0],Subscript[\[CapitalDelta], 2],Re[Subscript[\[Nu], opt]],Im[Subscript[\[Nu], opt]],\[Nu],Sw,Subscript[Y, LM],Subscript[X, LM],\[Alpha]]";
 
 Begin["`Private`"]
 e  = 2.718281828459045;
