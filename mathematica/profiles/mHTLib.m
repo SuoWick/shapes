@@ -73,7 +73,7 @@ mHT[\[Nu]0_,\[CapitalGamma]D_,\[CapitalGamma]0_,\[CapitalGamma]2_,\[CapitalDelta
        If[Abs[c2]!= 0.0,
          X    = ((\[Nu]0-\[Nu])I+c0)/c2;
          Y    = 0.25 (\[Nu]D/c2)^2;
-         csqY = 0.50 \[Nu]D (Abs[\[CapitalGamma]2]-\[CapitalDelta]2 I )/(\[CapitalGamma]2^2+\[CapitalDelta]2^2);
+         csqY = 0.50 \[Nu]D (\[CapitalGamma]2-\[CapitalDelta]2 I )/(\[CapitalGamma]2^2+\[CapitalDelta]2^2);
          If[Abs[Y]>Abs[X] 10^(-15),
            z2 = Sqrt[X+Y]+csqY;
            z1 = If[Abs[X]>Abs[Y] 3 10^(-8),z2-2csqY,((\[Nu]0-\[Nu])I+c0)/\[Nu]D];
@@ -88,6 +88,7 @@ mHT[\[Nu]0_,\[CapitalGamma]D_,\[CapitalGamma]0_,\[CapitalGamma]2_,\[CapitalDelta
          z = ((\[Nu]0-\[Nu])I+c0)/\[Nu]D;
          w = cpf[-Im[z],Re[z]];
          w rp/\[Nu]D];
+       A={Abs[A[[1]]],A[[2]]}
        Output = Sw LM A/(pi(1-(\[Nu]R+I Im\[Nu]opt) A));
        {Re[Output],Im[Output]}]
 End[]
