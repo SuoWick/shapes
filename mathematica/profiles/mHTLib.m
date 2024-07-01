@@ -88,7 +88,7 @@ mHT[\[Nu]0_,\[CapitalGamma]D_,\[CapitalGamma]0_,\[CapitalGamma]2_,\[CapitalDelta
          z = ((\[Nu]0-\[Nu])I+c0)/\[Nu]D;
          w = cpf[-Im[z],Re[z]];
          w rp/\[Nu]D];
-       A={Abs[A[[1]]],A[[2]]};
+       A={Abs[Re[A]],Im[A]};
        Output = Sw LM A/(pi(1-(\[Nu]R+I Im\[Nu]opt) A));
        {Re[Output],Im[Output]}]
 End[]
