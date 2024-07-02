@@ -3,7 +3,7 @@
 (* ::Input::Initialization:: *)
 BeginPackage["mHTLib`"]
 mHT::usage="Modified Hartman Tran profile
-Subroutine to compute the complex normalized spectral shape of an isolated line by the mHT model
+Subroutine to compute the complex normalized spectral shape of a spectral line by the mHT model
 mHT[\[Nu]_0, \[CapitalGamma]_D, \[CapitalGamma]_0, \[CapitalGamma]_2, \[CapitalDelta]_0, \[CapitalDelta]_2, Re[\[Nu]_opt], Im[\[Nu]_opt], \[Nu], Sw, Y_LM, X_LM, \[Alpha]]
 
 Input/Output Parameters of Routine (Arguments or Common):
